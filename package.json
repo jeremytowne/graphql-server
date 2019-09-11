@@ -1,0 +1,39 @@
+{
+  "name": "graphql-server",
+  "version": "1.0.0",
+  "description": "An example of using an Apollo Graphql server in a node/express app.",
+  "main": "app/main.js",
+  "dependencies": {
+    "apollo-server-express": "^2.9.3",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "graphql": "^14.5.4",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.3.0",
+    "eslint-plugin-import": "^2.18.2",
+    "nodemon": "^1.19.2"
+  },
+  "scripts": {
+    "test": "test",
+    "start": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeremytowne/graphql-server.git"
+  },
+  "keywords": [
+    "apollo",
+    "graphql",
+    "node",
+    "express"
+  ],
+  "author": "Jeremy Towne <jtowne03@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeremytowne/graphql-server/issues"
+  },
+  "homepage": "https://github.com/jeremytowne/graphql-server#readme"
+}
