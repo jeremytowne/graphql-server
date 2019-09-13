@@ -1,10 +1,10 @@
 import express from 'express'
 import morgan from 'morgan'
-import hello from './routes/hello'
+import user from './routes/user'
 
 const app = express()
 export default app
 
 app.use(morgan('dev'))
 
-app.use('/hello', hello)
+app.use('/user', user)
