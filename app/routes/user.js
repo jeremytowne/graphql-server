@@ -2,7 +2,7 @@ import express from 'express'
 
 const app = express.Router()
 
-const userData = [
+export const userData = [
     {
         id: 1,
         firstName: 'Bob',
