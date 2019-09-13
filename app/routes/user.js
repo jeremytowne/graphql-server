@@ -23,9 +23,11 @@ export const userData = [
     }
 ]
 
+export const getUser = id => userData.find(user => user.id === id)
+
 app.get('/', (req, res) => res.send(userData))
 app.get('/:id', (req, res) => {
-    const user = userData.find(user => user.id === parseInt(req.params.id))
+    const user = getUser(parseInt(req.params.id))
     if(user) {
         res.send(user)
     } else {
