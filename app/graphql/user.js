@@ -17,11 +17,11 @@ const typeDefs = `
 export default typeDefs
 
 export const queryHandlers = `
-  user(id: Int): [User]
+  users(id: Int): [User]
 `
 
 export const queryResolvers = {
-    user(root, args, context, info) {
+    users(root, args, context, info) {
         const { id } = args
         if(id) {
             const user = getUser(id)
