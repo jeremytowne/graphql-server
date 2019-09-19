@@ -21,16 +21,16 @@ export const queryHandlers = `
 `
 
 export const queryResolvers = {
-    users(root, args, context, info) {
-        const { id } = args
-        if(id) {
-            const user = getUser(id)
-            if(user) {
-                return [user]
-            } else {
-                throw new Error(`Could not find user id ${id}`)
-            }
-        }
-        return userData
+  users(root, args, context, info) {
+    const { id } = args
+    if (id) {
+      const user = getUser(id)
+      if (user) {
+        return [user]
+      } else {
+        throw new Error(`Could not find user id ${id}`)
+      }
     }
+    return userData
+  },
 }

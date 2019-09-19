@@ -11,10 +11,10 @@ export default app
 app.use(morgan('dev'))
 
 const server = new ApolloServer({
-    typeDefs,
-    resolvers,
-    introspection: true,
-    context: context => context,
+  typeDefs,
+  resolvers,
+  introspection: true,
+  context: context => context,
 })
 server.applyMiddleware({ app })
 

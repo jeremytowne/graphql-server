@@ -1,5 +1,7 @@
 import { gql } from 'apollo-server-express'
-import userTypeDefs, { queryHandlers as userQueryHandlers } from './graphql/user'
+import userTypeDefs, {
+  queryHandlers as userQueryHandlers,
+} from './graphql/user'
 
 const typeDefs = gql`
     ${userTypeDefs}
