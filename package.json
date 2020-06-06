@@ -4,7 +4,7 @@
   "description": "An example of using an Apollo Graphql server in a node/express app.",
   "main": "app/main.js",
   "dependencies": {
-    "apollo-server-express": "^2.9.3",
+    "apollo-server-express": "^2.14.2",
     "esm": "^3.2.25",
     "express": "^4.17.1",
     "graphql": "^14.5.4",
